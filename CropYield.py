@@ -26,7 +26,7 @@ global X,Y
 global dataset
 global le
 global model
-
+#upload function
 def upload():
     global filename
     global dataset
@@ -39,7 +39,7 @@ def upload():
     dataset.fillna(0, inplace = True)
     dataset['Production'] = dataset['Production'].astype(np.int64)
     text.insert(END,str(dataset.head())+"\n")
-
+#process dataset function
 def processDataset():
     global le
     global dataset
