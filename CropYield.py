@@ -102,7 +102,7 @@ def cropYieldPredict():
         text.insert(END,"Test Record : "+str(test[i])+" Production would be : "+str(production)+" KGs\n")
         text.insert(END,"Yield would be : "+str(crop_yield)+" KGs/acre\n\n")
     
-
+#close function
 def close():
     main.destroy()
 
